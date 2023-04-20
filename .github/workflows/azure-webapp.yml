@@ -41,7 +41,7 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
         cache: 'npm'
-        cache-dependency-path: react-backen/package-lock.json
+        cache-dependency-path: react-backend/package-lock.json
 
     - name: npm install
       working-directory: './${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
