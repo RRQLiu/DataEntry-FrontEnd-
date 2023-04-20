@@ -47,13 +47,13 @@ jobs:
       working-directory: './${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
       run: |
         npm install
-    - name: npm client install
-      working-directory: './${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/client'
+    - name: npm frontend install
+      working-directory: './${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/frontend'
       run: |
         npm install
         
-    - name: npm build client
-      working-directory: './${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/client'
+    - name: npm build frontend
+      working-directory: './${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/frontend'
       run: |
         npm run build
         rm -r public
