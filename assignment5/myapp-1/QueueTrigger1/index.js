@@ -7,7 +7,7 @@ module.exports = async function (context, myQueueItem) {
     let response = await fetch('https://imageconverter.cognitiveservices.azure.com/computervision/imageanalysis:analyze?features=caption,read&model-version=latest&language=en&api-version=2023-02-01-preview', {
         method: 'POST',
         headers: {
-            'Ocp-Apim-Subscription-Key': '5794711f830a4a949a8913eb51db4460',
+            'Ocp-Apim-Subscription-Key': env.ocrKey,
             'Content-Type': 'application/json'
         },
         body: `{'url': '${myQueueItem}'}`
