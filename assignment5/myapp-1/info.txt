@@ -1,0 +1,3 @@
+
+Command : 
+docker run --env-file .env  -p 8080:80 -it appqueue.azurecr.io/azurefunctionsimage:v1.0.0 

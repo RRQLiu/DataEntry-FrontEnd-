@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "outqueue",
+      "connection": "strageq_STORAGE"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "outMsg",
+      "databaseName": "warehouse",
+      "collectionName": "image1",
+      "connectionStringSetting": "productslist_DOCUMENTDB"
+    }
+  ]
+}
