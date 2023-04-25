@@ -2,20 +2,15 @@ import React, { useState } from "react";
 import { TextField, Button, Box, Typography } from "@mui/material";
 import axios from "axios";
 
-const API_URL = "https://appcontainer.gentleglacier-98bdc4b1.eastus.azurecontainerapps.io/api/HttpTrigger1";
+const API_URL = 'https://appcontainer.gentleglacier-98bdc4b1.eastus.azurecontainerapps.io/api/HttpTrigger1';
 
 const App = () => {
   const [inputValue, setInputValue] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    try {
-      const response = await axios.post(API_URL, { data: inputValue });
-      console.log(response.data);
+      const response = await axios.post(API_URL, inputValue);
       setInputValue("");
-    } catch (error) {
-      console.log(error);
-    }
   };
 
   return (
