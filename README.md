@@ -1,6 +1,6 @@
 # Warehouse Automation 
 
-##Project Description
+## Project Description
 
 The warehouse automation is designed for a scenario of a small family business and the management of their warehouse. The warehouse automation project needs to meet following requirements: 
 
