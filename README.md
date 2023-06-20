@@ -16,3 +16,9 @@ The warehouse automation is designed for a scenario of a small family business a
     > Immediate **Queue messaging** to avoid waiting while OCR occuring
 6. CI/CD automation of deployment
     > Git action
+
+
+
+## DataFlow of the Warehouse
+
+![data](/images/dataflow.png)
