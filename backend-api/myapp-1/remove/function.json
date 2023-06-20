@@ -1,0 +1,20 @@
+﻿{
+  "bindings": [
+    {
+      "name": "req",
+      "route": "remove/person/{id}",
+      "authLevel": "anonymous",
+      "methods": [
+        "delete",
+        "get"
+      ],
+      "direction": "in",
+      "type": "httpTrigger"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
