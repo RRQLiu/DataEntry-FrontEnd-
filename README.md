@@ -10,7 +10,7 @@ The warehouse automation is designed for a scenario of a small family business a
     > Docker containerize api and Azure app service deploy
 3. Swagger Expanation for api
 4. Front-end page that connect all functionality for them to use 
-    > ReactJS + Express
+    > React(TypeScript) + Express
 5. In addition, the warehouse should be able to accept picture of products! 
     > OCR api to process the image 
     > Immediate **Queue messaging** to avoid waiting while OCR occuring
